@@ -4,6 +4,7 @@ import { Button } from '@heroui/react'
 import { LuShoppingBasket } from "react-icons/lu"
 import Marquee from "./Marqee"
 import Link from "next/link"
+import TopProduct from "./TopProduct"
 const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -42,6 +43,7 @@ const Banner = () => {
                 <div className="my-12">
                     <Marquee />
                 </div>
+                
             </motion.div>
         </div>
     )

@@ -1,10 +1,11 @@
 "use client"
 import { Button } from '@heroui/react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const ProductCard = ({ product }) => {
-    const { title, price, images } = product
+    const {id, title, price, images } = product
     const [hoverd, sethoverd] = useState(false)
 
     const firstimg=images?.[0]
@@ -34,7 +35,7 @@ const ProductCard = ({ product }) => {
             <h2 className='text-xl font-bold '>{title}</h2>
             <p className='text-md font-semibold '>Price : <span className='text-red-500'>${price}</span></p>
             <div>
-                <Button className={'rounded w-full my-3'}>View Details</Button>
+                <Link href={`/products/${id}`}><Button className={'rounded w-full my-3'}>View Details</Button></Link>
             </div>
         </div>
     )
