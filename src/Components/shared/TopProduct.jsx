@@ -7,9 +7,9 @@ const TopProduct = async () => {
     const products = await GetProduct()
 
     return (
-        <section className="container mx-auto my-16 px-6">
+        <section className="container mx-auto mt-3 px-6">
             <h2 className="text-3xl font-bold mb-10 text-center">
-                🔥 Top Products
+                Top Products
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -19,7 +19,7 @@ const item = {
 const Banner = () => {
     return (
         <div>
-            <motion.div className='container mx-auto my-8 flex flex-col items-center justify-center h-[600px] space-y-6'
+            <motion.div className='container mx-auto mt-5 flex flex-col items-center justify-center h-[600px] space-y-6'
                 variants={container}
                 initial='hidden'
                 animate='visible'
@@ -40,7 +40,7 @@ const Banner = () => {
                         Shop Now <LuShoppingBasket />
                     </motion.button>
                 </Link>
-                <div className="my-12">
+                <div className="mt-20">
                     <Marquee />
                 </div>
                 
