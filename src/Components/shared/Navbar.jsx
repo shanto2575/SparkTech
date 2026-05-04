@@ -24,9 +24,9 @@ const Navbar = () => {
 
                 {/* Login Button */}
                 <div className="hidden md:block">
-                    <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                    <Link href={'/login'}><button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
                         Login
-                    </button>
+                    </button></Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -45,9 +45,9 @@ const Navbar = () => {
                         <li><NavLink href="/">Home</NavLink></li>
                         <li><NavLink href="/product">Products</NavLink></li>
                         <li><NavLink href="/profile">Profile</NavLink></li>
-                        <button className="bg-blue-600 text-white py-2 rounded-lg">
+                        <Link href={'/login'}><button className="bg-blue-600 text-white py-2 rounded-lg">
                             Login
-                        </button>
+                        </button></Link>
                     </ul>
                 </div>
             )}
